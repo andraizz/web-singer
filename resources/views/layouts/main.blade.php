@@ -9,34 +9,34 @@
   </head>
   <body>
     <nav id="main-nav" class="navbar sticky-top navbar-expand-lg navbar-light bg-white shadow">
-        <div class="container">
-          <a class="navbar-brand mb-0" href="/">
-            <img src="https://singerindonesia.com/assets/img/logo.png" class="logo img-fluid" alt="Singer Indonesia" width="200px">
-          </a>
-          <button class="navbar-toggler border-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav ml-auto py-4 py-lg-0 text-center text-lg-left">
-              <li class="nav-item">
-                <a class="nav-link {{ ($title === "About") ? 'active' : '' }}" href="/about">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link {{ ($title === "Products") ? 'active' : '' }}" href="/products">Products</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link {{ ($title === "Sewing Club") ? 'active' : '' }}" href="/club">Sewing Club</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link {{ ($title === "Our Dealer") ? 'active' : '' }}" href="/dealer">Our Dealer</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link {{ ($title === "Service Center") ? 'active' : '' }}" href="/service">Service Center</a>
-              </li>
-            </ul>
-          </div>
+      <div class="container">
+        <a class="navbar-brand mb-0" href="/">
+          <img src="https://singerindonesia.com/assets/img/logo.png" class="logo img-fluid" alt="Singer Indonesia" width="200px">
+        </a>
+        <button class="navbar-toggler border-0 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav ml-auto py-4 py-lg-0 text-center text-lg-left">
+            <li class="nav-item">
+              <a class="nav-link {{ ($title === "About") ? 'active' : '' }}" href="/about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {{ ($title === "Products") ? 'active' : '' }}" href="/products">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {{ ($title === "Sewing Club") ? 'active' : '' }}" href="/club">Sewing Club</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {{ ($title === "Our Dealer") ? 'active' : '' }}" href="/dealer">Our Dealer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {{ ($title === "Service Center") ? 'active' : '' }}" href="/service">Service Center</a>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
       <div class="container mt-4">
         @yield('container')
     </div>
