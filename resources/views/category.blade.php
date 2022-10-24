@@ -3,9 +3,9 @@
 @section('container')
     <h1>Kategori Produk</h1>
     <h6>Temukan mesin jahit, aksesoris dan suku cadang yang Anda butuhkan</h6>
-    <div class="container p-4">
+    <div class="container pt-4">
         <div class="row">
-            <div class="col-4">
+            <div class="col-4 pb-4">
                 <div class="card">
                     <img class="card-img-top" src="img/image1.png" alt="Card image" style="width:100%">
                     <div class="card-body">
@@ -35,7 +35,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-4 pb-4">
                 <div class="card">
                     <img class="card-img-top" src="img/image4.png" alt="Card image" style="width:100%">
                     <div class="card-body">
@@ -65,7 +65,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-4 pb-4">
                 <div class="card">
                     <img class="card-img-top" src="img/image3.png" alt="Card image" style="width:100%">
                     <div class="card-body">
