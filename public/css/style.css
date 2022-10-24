@@ -1,0 +1,42 @@
+/*------------------- NAVBAR ---------------------*/
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+}
+#main-nav {
+    font-size: 1.2rem;
+}
+#main-nav .navbar-nav .nav-link {
+    font-weight: 600;
+
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #000;
+}
+.navbar-light .navbar-nav .nav-link.active {
+    color: #ed174f;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #747474;
+}
+
+/*------------------- PRODUK/BG IMG ---------------------*/
+.bg-img{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    display: flex;
+    align-items: center;
+    border-radius: 18px;
+}
+
+.bg-cont{
+    max-width: 321px;
+    margin-left: 50px;
+}
+.bg-cont {
+    max-width: 452px;
+    margin-left: 73px;
+}
