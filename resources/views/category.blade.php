@@ -2,90 +2,156 @@
 
 @section('container')
     <h1>Kategori Produk</h1>
-    <h6>Temukan mesin jahit, aksesoris dan suku cadang yang Anda butuhkan</h6>
-    <div class="container pt-4">
-        <div class="row">
-            <div class="col-4 pb-4">
-                <div class="card">
-                    <img class="card-img-top" src="img/image1.png" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                        <h4 class="card-title">Mini</h4>
-                        <p class="card-text">Mesin Jahit Mini</p>
-                        <a href="/list_product" class="btn btn-primary">See</a>
-                    </div>
+        <div class="row mt-4 mb-4">
+            <div class="col-6 col-sm-3 col-lg-3">
+                <h2>Mini</h2>
+                <div class="card border-dark">
+                    <a href="/detail_product">
+                        <img src="https://singerindonesia.com//_assets/cimage/webroot/img.php?src=images/temp/1640333679_1cPFtTpDHOVmgKwn0uZq.png" class="card-img" alt="...">
+                    </a>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">M1005</p>
                 </div>
             </div>
-            <div class="col-4">
-                <div class="card">
-                    <img class="card-img-top" src="img/image2.png" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                        <h4 class="card-title">Heavy Duty</h4>
-                        <p class="card-text">Mesin Jahit Heavy Duty</p>
-                        <a href="#" class="btn btn-primary">See</a>
-                    </div>
+            <div class="col-6 col-sm-3 col-lg-3">
+                <h2>15 Class</h2>
+                <div class="card border-dark">
+                    <a href="/list_product">
+                        <img src="https://singerindonesia.com//_assets/cimage/webroot/img.php?src=images/temp/1592368167_o73CJb06IaN1wX5KdshG.png" class="card-img" alt="...">
+                    </a>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">15CD1A</p>
                 </div>
             </div>
-            <div class="col-4">
-                <div class="card">
-                    <img class="card-img-top" src="img/image3.png" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                        <h4 class="card-title">Portable</h4>
-                        <p class="card-text">Mesin Jahit Portable</p>
-                        <a href="#" class="btn btn-primary">See</a>
-                    </div>
+            <div class="col-6 col-sm-3 col-lg-3">
+                <h2>Flatbed</h2>
+                <div class="card border-dark">
+                    <a href="/list_product">
+                        <img src="https://singerindonesia.com//_assets/cimage/webroot/img.php?src=images/temp/1666686072_ZlGFYH98DcojMzxWCdJb.png" class="card-img" alt="...">
+                    </a>
                 </div>
-            </div>
-            <div class="col-4 pb-4">
-                <div class="card">
-                    <img class="card-img-top" src="img/image4.png" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                        <h4 class="card-title">Overlock</h4>
-                        <p class="card-text">Mesin Obras/Neci Portabel</p>
-                        <a href="#" class="btn btn-primary">See</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="card">
-                    <img class="card-img-top" src="img/image5.png" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                        <h4 class="card-title">Electronic</h4>
-                        <p class="card-text">Mesin Jahit Elektronik</p>
-                        <a href="#" class="btn btn-primary">See</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="card">
-                    <img class="card-img-top" src="img/image2.png" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                        <h4 class="card-title">Embroidery</h4>
-                        <p class="card-text">Mesin Jahit Bordir</p>
-                        <a href="#" class="btn btn-primary">See</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4 pb-4">
-                <div class="card">
-                    <img class="card-img-top" src="img/image3.png" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                        <h4 class="card-title">15 Class</h4>
-                        <p class="card-text">Mesin Jahit Klasik</p>
-                        <a href="#" class="btn btn-primary">See</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="card">
-                    <img class="card-img-top" src="img/image1.png" alt="Card image" style="width:100%">
-                    <div class="card-body">
-                        <h4 class="card-title">Flatbed</h4>
-                        <p class="card-text">Mesin Jahit Flatbed</p>
-                        <a href="#" class="btn btn-primary">See</a>
-                    </div>
+                <div class="card-body">
+                    <p class="card-text">984</p>
                 </div>
             </div>
         </div>
-    </div>
+        {{-- <div class="row mt-4 mb-4">
+            <h2>Heavy Duty</h2>
+            <div class="col-6 col-sm-3 col-lg-3">
+                <div class="card border-dark">
+                    <a href="/list_product">
+                        <img src="https://singerindonesia.com//_assets/cimage/webroot/img.php?src=images/temp/1592367411_hKz0J1uresOoCyD4pqjb.png" class="card-img" alt="...">
+                    </a>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Heavy Duty 4411</p>
+                </div>
+            </div>
+            <div class="col-6 col-sm-3 col-lg-3">
+                <div class="card border-dark">
+                    <a href="/list_product">
+                        <img src="https://singerindonesia.com//_assets/cimage/webroot/img.php?src=images/temp/1592367428_t3ZzbUWMPke2cxKr5849.png" class="card-img" alt="...">
+                    </a>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Heavy Duty 4423</p>
+                </div>
+            </div>
+            <div class="col-6 col-sm-3 col-lg-3">
+                <div class="card border-dark">
+                    <a href="/list_product">
+                        <img src="https://singerindonesia.com//_assets/cimage/webroot/img.php?src=images/temp/1592367440_GkHXrau0ZzmeVj4TWI2s.png" class="card-img" alt="...">
+                    </a>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Heavy Duty 4432</p>
+                </div>
+            </div>
+            <div class="col-6 col-sm-3 col-lg-3">
+                <div class="card border-dark">
+                    <a href="/list_product">
+                        <img src="https://singerindonesia.com//_assets/cimage/webroot/img.php?src=images/temp/1592367457_3PuexkXvMc27p95oRHiW.png" class="card-img" alt="...">
+                    </a>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Scholastic™ 5511</p>
+                </div>
+            </div>
+            <div class="col-6 col-sm-3 col-lg-3">
+                <div class="card border-dark">
+                    <a href="/list_product">
+                        <img src="https://singerindonesia.com//_assets/cimage/webroot/img.php?src=images/temp/1592367477_WfGkXnKCaDYUO958JZ2R.png" class="card-img" alt="...">
+                    </a>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Scholastic™ 5523</p>
+                </div>
+            </div>
+            <div class="col-6 col-sm-3 col-lg-3">
+                <div class="card border-dark">
+                    <a href="/list_product">
+                        <img src="https://singerindonesia.com//_assets/cimage/webroot/img.php?src=images/temp/1595563865_Cjoe91z2clnNgfqQIJdL.png" class="card-img" alt="...">
+                    </a>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">14HD854</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4 mb-4">
+            <h2>Portable</h2>
+            <div class="col-6 col-sm-3 col-lg-3">
+                <div class="card border-dark">
+                    <a href="/list_product">
+                        <img src="https://singerindonesia.com//_assets/cimage/webroot/img.php?src=images/temp/1640666000_Uk5MH7FPO4niuX2vNdy3.png" class="card-img" alt="...">
+                    </a>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">M1155</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4 mb-4">
+            <h2>Overclock</h2>
+            <div class="col-6 col-sm-3 col-lg-3">
+                <div class="card border-dark">
+                    <a href="/list_product">
+                        <img src="https://singerindonesia.com//_assets/cimage/webroot/img.php?src=images/temp/1592368022_AVQtuBmeGwb0x6sPW8Hf.png" class="card-img" alt="...">
+                    </a>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">14SH754</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4 mb-4">
+            <h2>Electronic</h2>
+            <div class="col-6 col-sm-3 col-lg-3">
+                <div class="card border-dark">
+                    <a href="/list_product">
+                        <img src="https://singerindonesia.com//_assets/cimage/webroot/img.php?src=images/temp/1592367874_Bz9QEXUZp1VrsMqgnm6w.png" class="card-img" alt="...">
+                    </a>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Featherweight™ C240</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4 mb-4">
+            <h2>Embroidery</h2>
+            <div class="col-6 col-sm-3 col-lg-3">
+                <div class="card border-dark">
+                    <a href="/list_product">
+                        <img src="https://singerindonesia.com//_assets/cimage/webroot/img.php?src=images/temp/1592367967_dDSWqGQ8ceiZlTOLhV1s.png" class="card-img" alt="...">
+                    </a>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Quantum Stylist™ EM200</p>
+                </div>
+            </div>
+        </div> --}}
+    
       
 @endsection

@@ -22,21 +22,7 @@
 }
 
 /*------------------- PRODUK/BG IMG ---------------------*/
-.bg-img{
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: auto;
-    display: flex;
-    align-items: center;
-    border-radius: 18px;
-}
 
-.bg-cont{
-    max-width: 321px;
-    margin-left: 50px;
-}
-.bg-cont {
-    max-width: 452px;
-    margin-left: 73px;
-}
+
+
+

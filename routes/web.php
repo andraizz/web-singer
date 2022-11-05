@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Product;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,19 +28,29 @@ Route::get('/about', function () {
 
 Route::get('/products', function () {
     return view('products', [
-        "title" => "Products"
+        "title" => "Products",
+        "products" => Product::all()
     ]);
 });
 
-Route::get('/category', function () {
+Route::get('/products/{slug}', function ($slug) {
     return view('category', [
-        "title" => "Category"
+        "title" => "Category",
+        "category" => Product::find($slug)
     ]);
 });
+
+
 
 Route::get('/list_product', function () {
     return view('list_product', [
         "title" => "List Product"
+    ]);
+});
+
+Route::get('/detail_product', function () {
+    return view('detail_product', [
+        "title" => "Detail Product"
     ]);
 });
 
