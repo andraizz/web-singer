@@ -1,35 +1,71 @@
 @extends('layouts.main')
 
 @section('container')
-    <h1>Produk</h1>
-    <h6>Temukan mesin jahit, aksesoris dan suku cadang yang Anda butuhkan</h6>
-    <div class="row row-cols-1 row-cols-md-2 g-4 my-3">
-        @foreach ($products as $products)
-        <div class="col-md-4">
-            <div class="{{ $products["card"] }}">
-                <a href="/products/{{ $products["slug"] }}">
-                    <img src="{{ $products["image"] }}" class="card-img-top" alt="...">
-                </a>
-                <div class="{{ $products["card-body"] }}">
-                    <h5 class="mt-3">{{ $products["card-title"] }}</h5>
-                    <p class="small">{{ $products["card-text"] }}</p>
+
+<section id="product" class="products">
+    <div class="container">
+        <section class="section-products">
+            <div class="container">
+                <div class="header text-center">
+                    <h3>Produk Terbaru</h3>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <form action="/products">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Search..." name="search" value="{{ request('search') }}">
+                                <button class="btn" style="background-color: #ed174f; color:white" type="submit">Search</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="products">
+                    <div class="row">
+                        <div class="nav nav-pills d-flex justify-content-center mb-2">
+                            <button class="nav-link me-4 my-2 p-2 active"
+                                data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
+                                <h6 class="m-0">Semua</h6>
+                            </button>
+                            {{-- <button class="nav-link my-2 p-2"
+                                data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
+                                <h6 class="m-0">Stand</h6>
+                            </button> --}}
+                        </div>
+                        {{-- 1. Button 1 --}}
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="tab-pane-1">
+                                <div class="row">
+                                    @foreach ($products as $product)
+                                    <!-- Single Product -->
+                                    <div class="col-6 col-sm-6 col-md-4 col-lg-3">
+                                        <div id="product-1" class="card border-0 single-product">
+                                            <div class="part-1">
+                                                <span class="new">{{ $product->best_seller }}</span>
+                                                <span class="discount">{{ $product->diskon }}</span>
+                                                <a href="/products/{{ $product->slug }}">
+                                                    <img src="{{ $product->gambar }}" class="card-img-top" title="{{ $product->nama_produk }}" alt="{{ $product->nama_produk }}">
+                                                </a>
+                                                <ul>
+                                                    <li><a href="https://api.whatsapp.com/send?phone=6281383521987&text=Halo,%20Saya%20tertarik%20dengan%20produk%20:%20{{ $product->nama_produk }}"><i class="fa-brands fa-whatsapp me-2"></i>WhatsApp</a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-body part-2">
+                                                <h3 class="product-title">{{ $product->nama_produk }}</h3>
+                                                <h4 class="product-old-price">{{ Str::currency($product->harga_lama) }}</h4>
+                                                <h4 class="product-price text-danger">{{ Str::currency($product->harga_baru) }}</h4>
+                                                <h5 class="stock"><i class="fa-solid fa-check"></i> {{ $product->stok }}</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    @endforeach
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        @endforeach
+        </section>
     </div>
-    {{-- <div class="row row-cols-1 row-cols-md-2 g-4 my-3">
-        <div class="col-md-4">
-            <div class="card bg-danger bg-opacity-25 border border-5 border-danger shadow rounded-5">
-                <a href="/products/{{ $products["slug"] }}">
-                    <img src="https://singerindonesia.com//_assets/cimage/webroot/img.php?src=images/temp/1592367316_gN1oLjDlTHp5XsqQ4rC2.png" class="card-img-top" alt="...">
-                </a>
-                <div class="card-body text-center text-bg-danger bg-opacity-100 rounded-5 m-2 p-1">
-                    <h5 class="mt-3">Household Sewing Machines</h5>
-                    <p class="small">Mesin Jahit Rumah Tangga</p>
-                </div>
-            </div>
-        </div>
-    </div> --}}
+</section>
 
 @endsection
