@@ -43,7 +43,7 @@
                                                 <span class="new">{{ $product->best_seller }}</span>
                                                 <span class="discount">{{ $product->diskon }}</span>
                                                 <a href="/products/{{ $product->slug }}">
-                                                    <img src="{{ $product->gambar }}" class="card-img-top" title="{{ $product->nama_produk }}" alt="{{ $product->nama_produk }}">
+                                                    <img src="{{ asset('storage/' . $product->gambar) }}" class="card-img-top" title="{{ $product->nama_produk }}" alt="{{ $product->nama_produk }}">
                                                 </a>
                                                 <ul>
                                                     <li><a href="https://api.whatsapp.com/send?phone=6281383521987&text=Halo,%20Saya%20tertarik%20dengan%20produk%20:%20{{ $product->nama_produk }}"><i class="fa-brands fa-whatsapp me-2"></i>WhatsApp</a></li>
