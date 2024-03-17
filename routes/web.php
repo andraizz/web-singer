@@ -29,35 +29,35 @@ Route::get('/about', function () {
     ]);
 });
 
-Route::get('/products', function () {
-    return view('products', [
-        "title" => "Products"
-    ]);
-});
+// Route::get('/products', function () {
+//     return view('products', [
+//         "title" => "Products"
+//     ]);
+// });
 
 // Product Category
-Route::get('/products', [ProductController::class, 'index']);
-Route::get('/products/{product:slug}', [ProductController::class, 'show']);
+Route::get('/', [ProductController::class, 'index']);
+Route::get('/{product:slug}', [ProductController::class, 'show']);
 
 
-Route::get('/sewing-club', function () {
-    return view('sewing-club', [
-        "title" => "Sewing Club"
-    ]);
-});
+// Route::get('/sewing-club', function () {
+//     return view('sewing-club', [
+//         "title" => "Sewing Club"
+//     ]);
+// });
 
-Route::get('/service-center', function () {
-    return view('service-center', [
-        "title" => "Service Center"
-    ]);
-});
+// Route::get('/service-center', function () {
+//     return view('service-center', [
+//         "title" => "Service Center"
+//     ]);
+// });
 
-Route::get('/our-dealer', function () {
-    return view('our-dealer', [
-        "title" => "Our Dealer",
-        "active" => "our dealer"
-    ]);
-});
+// Route::get('/our-dealer', function () {
+//     return view('our-dealer', [
+//         "title" => "Our Dealer",
+//         "active" => "our dealer"
+//     ]);
+// });
 
 Route::get('/login', [LoginController::class, 'index'])->name('login')->middleware('guest');
 Route::post('/login', [LoginController::class, 'authenticate']);

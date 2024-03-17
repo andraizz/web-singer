@@ -36,7 +36,9 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav text-center">
                         <li class="nav-item">
-                            <a class="nav-link {{ Request::is('products*') ? 'active' : '' }}" href="/products">Products</a>
+                            {{-- <a class="nav-link {{ Request::is('products*') ? 'active' : '' }}" href="/products">Products</a> --}}
+                            <a class="nav-link" href="#product">Products</a>
+                            <a class="nav-link" href="/login">Login</a>
                         </li>
                         {{-- @auth
                         <li class="nav-item dropdown">

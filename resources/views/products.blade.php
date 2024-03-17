@@ -2,7 +2,8 @@
 
 @section('container')
 
-<section id="product" class="products">
+
+{{-- <section id="product" class="products">
     <div class="container">
         <section class="section-products">
             <div class="container">
@@ -26,17 +27,11 @@
                                 data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
                                 <h6 class="m-0">Semua</h6>
                             </button>
-                            {{-- <button class="nav-link my-2 p-2"
-                                data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
-                                <h6 class="m-0">Stand</h6>
-                            </button> --}}
                         </div>
-                        {{-- 1. Button 1 --}}
                         <div class="tab-content">
                             <div class="tab-pane fade show active" id="tab-pane-1">
                                 <div class="row">
                                     @foreach ($products as $product)
-                                    <!-- Single Product -->
                                     <div class="col-6 col-sm-6 col-md-4 col-lg-3">
                                         <div id="product-1" class="card border-0 single-product">
                                             <div class="part-1">
@@ -66,6 +61,6 @@
             </div>
         </section>
     </div>
-</section>
+</section> --}}
 
 @endsection

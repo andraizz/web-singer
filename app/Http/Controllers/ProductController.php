@@ -9,10 +9,15 @@ class ProductController extends Controller
 {
     public function index()
     {
-        return view('products', [
-            "title" => "Product Category",
-            "products" => Product::latest()->filter(request(['search']))->get()
+        $products = Product::latest()->filter(request(['search']))->get();
+        return view('home', [
+            "title" => "Home",
+            "products" => $products
         ]);
+        // return view('products', [
+        //     "title" => "Product Category",
+        //     "products" => Product::latest()->filter(request(['search']))->get()
+        // ]);
     }
 
     public function show(Product $product)
